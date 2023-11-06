@@ -1,0 +1,14 @@
+# karnak-user 9 PS7327.3336N 0026743736320 amz-p,release-keys
+- manufacturer: amazon
+- platform: mt8163
+- codename: karnak
+- flavor: karnak-user
+- release: 9
+- id: PS7327.3336N
+- incremental: 0026743736452
+- tags: amz-p,release-keys
+- fingerprint: Amazon/karnak/karnak:9/PS7327.3336N/0026743736320:user/amz-p,release-keys
+- is_ab: false
+- brand: Amazon
+- branch: karnak-user-9-PS7327.3336N-0026743736320-amz-p,release-keys
+- repo: android_amazon_karnak_dump

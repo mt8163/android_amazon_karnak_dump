@@ -1,0 +1,156 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "dump-ramdump.sh",
+    src: "bin/dump-ramdump.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "read_diskstat.sh",
+    src: "bin/read_diskstat.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "read_lifetime.sh",
+    src: "bin/read_lifetime.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "wifi_log_levels.sh",
+    src: "bin/wifi_log_levels.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "wifi_metrics_common.sh",
+    src: "bin/wifi_metrics_common.sh",
+    vendor: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "factory_init.connectivity.rc",
+    src: "etc/factory_init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "factory_init.project.rc",
+    src: "etc/factory_init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "factory_init.rc",
+    src: "etc/factory_init.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ago.rc",
+    src: "etc/init.ago.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mdump.rc",
+    src: "etc/init.mdump.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "etc/init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt8163.rc",
+    src: "etc/init.mt8163.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt8163.usb.rc",
+    src: "etc/init.mt8163.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sensor_1_0.rc",
+    src: "etc/init.sensor_1_0.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.connectivity.rc",
+    src: "etc/meta_init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.modem.rc",
+    src: "etc/meta_init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.project.rc",
+    src: "etc/meta_init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.rc",
+    src: "etc/meta_init.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "multi_init.rc",
+    src: "etc/multi_init.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+// fstab
+prebuilt_etc {
+    name: "fstab.mdump",
+    src: "etc/fstab.mdump",
+    vendor: true,
+}
