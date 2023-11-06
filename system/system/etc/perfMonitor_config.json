@@ -1,0 +1,284 @@
+{
+    "MonitorConfig":[
+       {
+          "Monitor Name":"ProcessMemMonitor",
+          "Active":true,
+          "MetricName":"PssKB",
+          "Sample_interval_ticks":3600,
+          "Metric_logcat_interval_ticks":3600,
+          "Metric_report_interval_ticks":3600,
+          "PMET_Metric_Interface":{
+             "ProgramName":"ProcessMemMonitor",
+             "Active":true
+          },
+          "Minerva_Metric_Interface":{
+             "Schema_Id":"03t4/2/03330410",
+             "Active":true,
+             "Metric_Key":{
+                "Name":"psskb_process_name",
+                "DimensionTag":"ProcessName"
+             },
+             "Metric_Value":{
+                "Name":"psskb_process_usage",
+                "DimensionTag":"PssKb"
+             }
+          }
+       },
+       {
+         "Monitor Name":"ProcessCpuMonitor",
+         "Active":true,
+         "MetricName":"CpuUsage",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":3600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"ProcessCpuMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"qeod/2/03330410",
+            "Active":true,
+            "Metric_Key":{
+               "Name":"cpu_process_name",
+               "DimensionTag":"ProcessName"
+            },
+            "Metric_Value":{
+               "Name":"cpu_process_usage",
+               "DimensionTag":"CpuUsage"
+            }
+         }
+      },
+      {
+         "Monitor Name":"CpuUsageMonitor",
+         "Active":true,
+         "MetricName":"CpuUsageMonitor",
+         "Sample_interval_ticks":1,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"CpuUsageMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"y4eu/2/03330410",
+            "Active":true,
+            "Metric_Key":{
+               "Name":"cpu_utilization_name",
+               "DimensionTag":"CpuUtilType"
+            },
+            "Metric_Value":{
+               "Name":"cpu_utilization_value",
+               "DimensionTag":"CpuUtilVal"
+            }
+         }
+      },
+      {
+         "Monitor Name":"MemoryUsageMonitor",
+         "Active":true,
+         "MetricName":"MemoryUsageMonitor",
+         "Sample_interval_ticks":1,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"MemoryUsageMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"va0x/2/03330410",
+            "Active":true,
+            "Metric_Key":{
+               "Name":"memory_utilization_name",
+               "DimensionTag":"MemUtilType"
+            },
+            "Metric_Value":{
+               "Name":"memory_utilization_value",
+               "DimensionTag":"MemUtilVal"
+            }
+         }
+      },
+      {
+         "Monitor Name":"SystemMemMonitor",
+         "Active":true,
+         "MetricName":"SystemMemMonitor",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":3600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"SystemMemMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"z0hx/2/04330410",
+            "Active":true,
+            "Metric_Key":{
+               "Name":"system_memory_type",
+               "DimensionTag":"SystemMemType"
+            },
+            "Metric_Value":{
+               "Name":"system_memory_value",
+               "DimensionTag":"SystemMemVal"
+            }
+         }
+      },
+      {
+         "Monitor Name":"ProcessRssMonitor",
+         "Active":true,
+         "MetricName":"TotalRssKb",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":3600,
+         "Metric_report_interval_ticks":3600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"ProcessRssMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"kpv5/2/06330400",
+            "Active":false,
+            "Metrics":[
+               {
+                  "Name": "process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "RssKb",
+                  "DimensionTag":"RssKb",
+                  "Type": "int"
+               },
+               {
+                  "Name": "PID",
+                  "DimensionTag":"PID",
+                  "type": "str"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"DiskUsageMonitor",
+         "Active":true,
+         "MetricName":"PercentageUsed",
+         "Sample_interval_ticks":86400,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":86400,
+         "PMET_Metric_Interface":{
+            "ProgramName":"DiskUsageMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"ueat/2/03330410",
+            "Active":true,
+            "Metrics":[
+               {
+                  "Name": "partition_path",
+                  "DimensionTag":"PartitionPath",
+                  "Type": "str"
+               },
+               {
+                  "Name": "percent_used",
+                  "DimensionTag":"PercentUsed",
+                  "Type": "int"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"CpuClockMonitor",
+         "Active":true,
+         "MetricName":"CpuFreqDuration",
+         "Sample_interval_ticks":86400,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":86400,
+         "PMET_Metric_Interface":{
+            "ProgramName":"CpuClockMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"0b4g/2/02330400",
+            "Active":false,
+            "Metrics":[
+               {
+                  "Name": "cpu_duration_type",
+                  "DimensionTag":"CpuDurationType",
+                  "Type": "str"
+               },
+               {
+                  "Name": "duration",
+                  "DimensionTag":"Duration",
+                  "Type": "int"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"IonMemMonitor",
+         "Active":true,
+         "MetricName":"IonKB",
+         "Sample_interval_ticks":3600,
+         "Metric_logcat_interval_ticks":86400,
+         "Metric_report_interval_ticks":3600,
+         "PMET_Metric_Interface":{
+            "ProgramName":"IonMemMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"c6j1/2/02330400",
+            "Active":false,
+            "Metrics":[
+               {
+                  "Name": "process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "total_mem_kb",
+                  "DimensionTag":"TotalMemKb",
+                  "Type": "int"
+               }
+            ]
+         }
+      },
+      {
+         "Monitor Name":"VmPressureMonitor",
+         "Active":true,
+         "MetricName":"VMPRESSURE",
+         "Sample_interval_ticks":0,
+         "Metric_logcat_interval_ticks":0,
+         "Metric_report_interval_ticks":0,
+         "PMET_Metric_Interface":{
+            "ProgramName":"VmPressureMonitor",
+            "Active":true
+         },
+         "Minerva_Metric_Interface":{
+            "Schema_Id":"1kbn/2/02330400",
+            "Active":false,
+            "Metrics":[
+               {
+                  "Name": "process_name",
+                  "DimensionTag":"ProcessName",
+                  "Type": "str"
+               },
+               {
+                  "Name": "vm_usage",
+                  "DimensionTag":"VMUsage",
+                  "Type": "int"
+               },
+               {
+                  "Name": "vm_status",
+                  "DimensionTag":"VMStatus",
+                  "Type": "str"
+               },
+               {
+                  "Name": "group_name",
+                  "DimensionTag":"GroupName",
+                  "Type": "str"
+               }
+            ]
+         }
+      }
+    ],
+    "MinervaConfig":{
+       "Enabled":true,
+       "Region":"us-east-1",
+       "GroupId":"36vx75vi"
+    }
+}

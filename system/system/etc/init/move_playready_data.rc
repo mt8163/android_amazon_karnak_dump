@@ -1,0 +1,11 @@
+# For playready OTA upgrade
+on property:init.svc.mediadrm=running
+    start vendor.move_pr_data_sh
+
+service vendor.move_pr_data_sh /system/bin/move_playready_data.sh
+    class main
+    user media
+    group media mediadrm drmrpc
+    disabled
+    oneshot
+

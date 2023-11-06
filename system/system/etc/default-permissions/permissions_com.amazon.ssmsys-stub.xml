@@ -1,0 +1,10 @@
+<!--    Copyright (c) 2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+        PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<exceptions>
+    <exception
+        package="com.amazon.ssmsys">
+        <!-- Coarse Location for scan results -->
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="true" />
+    </exception>
+</exceptions>
