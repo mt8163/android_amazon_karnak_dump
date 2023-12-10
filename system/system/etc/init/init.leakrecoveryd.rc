@@ -1,0 +1,12 @@
+service leakrecoveryd /system/bin/leakrecoveryd
+    user root
+    group system
+    class main
+    disabled
+
+on property:persist.leakrecoveryd.enable=0
+    stop leakrecoveryd
+
+on property:persist.leakrecoveryd.enable=1
+    start leakrecoveryd
+

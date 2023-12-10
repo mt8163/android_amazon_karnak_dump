@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2019 - 2023 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<fosinit xmlns="http://www.amazon.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.amazon.com/fireos/base/core/config/ fosinit.xsd">
+    <vendor-callbacks>
+        <callback base="com.android.server.VendorConnectivityServiceCallback"
+            impl="com.amazon.android.server.ConnectivityServiceCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="android.net.ip.VendorIpManagerCallback"
+            impl="com.amazon.android.net.ip.IpManagerCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="android.net.dhcp.VendorDhcpPacketCallback"
+            impl="com.amazon.android.net.dhcp.DhcpPacketCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.connectivity.VendorNetworkMonitorCallback"
+            impl="com.amazon.android.net.dhcp.NetworkMonitorCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="android.net.dhcp.VendorDhcpClientCallback"
+            impl="com.amazon.android.net.dhcp.DhcpClientCallback"
+            classLoader="SYSTEMSERVER" />
+    </vendor-callbacks>
+</fosinit>
